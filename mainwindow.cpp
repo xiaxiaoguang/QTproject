@@ -1,12 +1,17 @@
 #include "mainwindow.h"
 #include "dialog.h"
 #include "./ui_mainwindow.h"
+
 #include<QMessageBox>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    setStyleSheet(
+            "QPushButton{background-color:grey;color:black}\
+             QPushButton::hover{color:black}");
     ui->setupUi(this);
 }
 
@@ -16,23 +21,39 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_pushButton_clicked()
+
+void MainWindow::on_toolButton_triggered(QAction *arg1)
 {
-    QMessageBox::about(this,"aqwq","b");
+
 }
 
 
-void MainWindow::on_pushButton_3_clicked()
+void MainWindow::on_HumanHumanButton_clicked()
 {
-    QMessageBox::about(this,"cqaq","d");
+
 }
 
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_HumanBotButton_clicked()
 {
-    Dialog sec;
-    sec.setModal(true);
-    sec.exec();
+
+}
+
+
+void MainWindow::on_Cardsetting_clicked()
+{
+
+}
+
+
+void MainWindow::on_Videosetting_clicked()
+{
+
+}
+
+
+void MainWindow::on_Gamesetting_clicked()
+{
 
 }
 

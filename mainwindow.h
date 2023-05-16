@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -15,12 +16,19 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
 private slots:
-    void on_pushButton_clicked();
+    void on_toolButton_triggered(QAction *arg1);
 
-    void on_pushButton_3_clicked();
+    void on_HumanHumanButton_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_HumanBotButton_clicked();
+
+    void on_Cardsetting_clicked();
+
+    void on_Videosetting_clicked();
+
+    void on_Gamesetting_clicked();
 
 private:
     Ui::MainWindow *ui;
