@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "dialog.h"
 #include "./ui_mainwindow.h"
 
 #include<QMessageBox>
@@ -21,16 +20,11 @@ MainWindow::~MainWindow()
 }
 
 
-
-void MainWindow::on_toolButton_triggered(QAction *arg1)
-{
-
-}
-
-
 void MainWindow::on_HumanHumanButton_clicked()
 {
-
+    HHFIght = new Dialog();
+    this->hide();
+    HHFIght->show();
 }
 
 

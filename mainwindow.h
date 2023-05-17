@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "dialog.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -18,8 +19,6 @@ public:
 
 
 private slots:
-    void on_toolButton_triggered(QAction *arg1);
-
     void on_HumanHumanButton_clicked();
 
     void on_HumanBotButton_clicked();
@@ -32,5 +31,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    Dialog* HHFIght;
 };
 #endif // MAINWINDOW_H
