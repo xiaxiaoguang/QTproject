@@ -22,10 +22,13 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_HumanHumanButton_clicked()
 {
-    QMessageBox* msgBox = new QMessageBox();
-    msgBox->setText("敬请期待");
-    msgBox->show();
-    QTimer::singleShot(3000, msgBox, &QMessageBox::close);
+//    QMessageBox* msgBox = new QMessageBox();
+//    msgBox->setText("敬请期待");
+//    msgBox->show();
+//    QTimer::singleShot(3000, msgBox, &QMessageBox::close);
+    Dialog *a = new Dialog;
+    this->hide();
+    a->show();
 }
 
 
