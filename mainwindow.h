@@ -18,7 +18,6 @@ public:
 
 
 private slots:
-    void on_toolButton_triggered(QAction *arg1);
 
     void on_HumanHumanButton_clicked();
 

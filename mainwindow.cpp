@@ -3,7 +3,7 @@
 #include "./ui_mainwindow.h"
 
 #include<QMessageBox>
-
+#include<QTimer>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -20,17 +20,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-
-void MainWindow::on_toolButton_triggered(QAction *arg1)
-{
-
-}
-
-
 void MainWindow::on_HumanHumanButton_clicked()
 {
-
+    QMessageBox* msgBox = new QMessageBox();
+    msgBox->setText("敬请期待");
+    msgBox->show();
+    QTimer::singleShot(3000, msgBox, &QMessageBox::close);
 }
 
 
