@@ -6,34 +6,49 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>805</width>
-    <height>533</height>
+    <width>815</width>
+    <height>550</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>卡组选择界面</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{background-image:url(:/fightpre/background/yu_gi_oh__cards_by_theemerald-d5j2h5d.jpg);}</string>
   </property>
   <widget class="QGroupBox" name="Main">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>801</width>
-     <height>541</height>
+     <width>821</width>
+     <height>551</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,4,1">
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,5,1">
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,0,1">
         <item>
          <widget class="QPushButton" name="pushButton_6">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
             <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
+            <verstretch>50</verstretch>
            </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
           </property>
           <property name="text">
            <string>BacktoMainMenu</string>
@@ -43,10 +58,19 @@
         <item>
          <widget class="QLabel" name="label_4">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
             <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
+            <verstretch>50</verstretch>
            </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
           </property>
           <property name="text">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;请选择对战玩家1，2的卡组，并不支持在本页面修改卡组&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -56,10 +80,16 @@
         <item>
          <widget class="QPushButton" name="pushButton_7">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
             <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
+            <verstretch>50</verstretch>
            </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
           </property>
           <property name="text">
            <string>StartFight</string>
@@ -69,11 +99,26 @@
        </layout>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1">
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,6">
           <item>
            <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#ea4726;&quot;&gt;玩家1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
@@ -84,10 +129,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_5">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组1</string>
@@ -100,10 +154,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_4">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组2</string>
@@ -116,10 +179,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_3">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组3</string>
@@ -132,10 +204,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_2">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组4</string>
@@ -148,10 +229,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组5</string>
@@ -169,6 +259,21 @@
          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,6">
           <item>
            <widget class="QLabel" name="label_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#4498f7;&quot;&gt;玩家2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
@@ -179,10 +284,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_6">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组1</string>
@@ -195,10 +309,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_7">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组2</string>
@@ -211,10 +334,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_8">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组3</string>
@@ -227,10 +359,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_9">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组4</string>
@@ -243,10 +384,19 @@
             <item>
              <widget class="QRadioButton" name="radioButton_10">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
               </property>
               <property name="text">
                <string>卡组5</string>
@@ -266,6 +416,21 @@
        <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,6">
         <item>
          <widget class="QLabel" name="label_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="text">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#74e953;&quot;&gt;卡组预览&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
@@ -276,10 +441,16 @@
           <item>
            <widget class="QPushButton" name="pushButton_4">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
             </property>
             <property name="text">
              <string>卡组1</string>
@@ -289,10 +460,16 @@
           <item>
            <widget class="QPushButton" name="pushButton_5">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
             </property>
             <property name="text">
              <string>卡组2</string>
@@ -302,10 +479,16 @@
           <item>
            <widget class="QPushButton" name="pushButton_2">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
             </property>
             <property name="text">
              <string>卡组3</string>
@@ -315,10 +498,16 @@
           <item>
            <widget class="QPushButton" name="pushButton_3">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
             </property>
             <property name="text">
              <string>卡组4</string>
@@ -328,10 +517,16 @@
           <item>
            <widget class="QPushButton" name="pushButton">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
             </property>
             <property name="text">
              <string>卡组5</string>
@@ -350,7 +545,7 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

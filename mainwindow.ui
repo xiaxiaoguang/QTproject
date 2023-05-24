@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>808</width>
+    <width>818</width>
     <height>558</height>
    </rect>
   </property>
@@ -16,11 +16,17 @@
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
   <property name="windowTitle">
    <string>QTCYGO</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{background-image: url(:/MainWindow/background/Yu-Gi-Oh-yu-gi-oh-19631171-1920-1200.jpg); }</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -35,7 +41,7 @@
        <item>
         <widget class="QLabel" name="label">
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'逐浪新宋'; font-size:36pt; color:#ea4225;&quot;&gt;QTCYGO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:72pt; color:#ea4225;&quot;&gt;QTCYGO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::MarkdownText</enum>
@@ -45,7 +51,7 @@
        <item>
         <widget class="QLabel" name="label_2">
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;created by QuanTum Creation&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;chz,ymy,xj&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;created by QuanTum Creation&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;chz,ymy,xj&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;contact us:&lt;/span&gt;&lt;a href=&quot;https://github.com/xiaxiaoguang/QTproject&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;ClickedMe!&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -128,7 +134,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>808</width>
+     <width>818</width>
      <height>22</height>
     </rect>
    </property>

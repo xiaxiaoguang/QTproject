@@ -20,6 +20,7 @@ set(PROJECT_SOURCES
         fightpre.cpp
         fightpre.h
         fightpre.ui
+        rsc.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
