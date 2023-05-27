@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "dialog.h"
+#include "cardsetting.h"
 #include "./ui_mainwindow.h"
 
 #include<QMessageBox>
@@ -40,7 +41,9 @@ void MainWindow::on_HumanBotButton_clicked()
 
 void MainWindow::on_Cardsetting_clicked()
 {
-
+    cardbank_configuration *a = new cardbank_configuration;
+    this->hide();
+    a->show();
 }
 
 
