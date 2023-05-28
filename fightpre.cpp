@@ -1,6 +1,7 @@
 #include "fightpre.h"
 #include "ui_fightpre.h"
 #include<QMessageBox>
+#include "fightinterface.h"
 
 fightpre::fightpre(QWidget *parent) :
     QDialog(parent),
@@ -32,5 +33,13 @@ void fightpre::on_pushButton_6_clicked()
 {
     close();
     mw->show();
+}
+
+
+void fightpre::on_startFightButton_clicked()
+{
+    FightInterface * a = new FightInterface(mw);
+    close();
+    a->show();
 }
 
