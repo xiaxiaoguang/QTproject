@@ -20,6 +20,9 @@ set(PROJECT_SOURCES
         fightpre.cpp
         fightpre.h
         fightpre.ui
+        fightinterface.h
+        fightinterface.cpp
+        fightinterface.ui
         rsc.qrc
 )
 

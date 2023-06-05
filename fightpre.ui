@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>815</width>
-    <height>550</height>
+    <width>918</width>
+    <height>617</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -25,10 +25,10 @@
   <widget class="QGroupBox" name="Main">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>821</width>
-     <height>551</height>
+     <x>20</x>
+     <y>140</y>
+     <width>834</width>
+     <height>181</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -78,7 +78,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_7">
+         <widget class="QPushButton" name="startFightButton">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -545,7 +545,7 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

@@ -7,4 +7,7 @@
     <qresource prefix="/fightpre/background">
         <file>yu_gi_oh__cards_by_theemerald-d5j2h5d.jpg</file>
     </qresource>
+    <qresource prefix="/fightInterface/background">
+        <file>BattleField.jpeg</file>
+    </qresource>
 </RCC>
