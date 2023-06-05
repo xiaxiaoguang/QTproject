@@ -7,8 +7,18 @@
 三个基本的ui界面已经做成，分别是：
 
 1. 主界面ui
+
+[主界面uiHTML源码](https://github.com/xiaxiaoguang/QTproject/blob/test0/mainwindow.ui)
+
 2. 卡组选择界面ui
+
+[uiHTML源码](https://github.com/xiaxiaoguang/QTproject/blob/xj_A/cardbank_preview.ui)
+
+[ui2HTML源码](https://github.com/xiaxiaoguang/QTproject/blob/xj_A/cardsetting.ui)
+
 3. 战斗界面ui
+
+[uiHTML源码](https://github.com/xiaxiaoguang/QTproject/blob/test0/fightinterface.ui)
 
 负责卡组选择界面的报告：
 
