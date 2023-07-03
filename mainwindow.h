@@ -16,6 +16,21 @@ public:
     ~MainWindow();
 
 private slots:
+    void on_MBsystemsettings_clicked();
+
+private slots:
+    void on_MBreplay_clicked();
+
+private slots:
+    void on_MBcardsetting_clicked();
+
+private slots:
+    void on_MBpve_clicked();
+
+private slots:
+    void on_MBpvp_clicked();
+
+private slots:
     void on_pushButton_5_clicked();
 
 private:

@@ -19,6 +19,9 @@
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QFrame" name="frame">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="styleSheet">
       <string notr="true">#frame{
 border-image: url(:/fightInterface/background/BattleField.jpeg);}

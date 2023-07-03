@@ -23,6 +23,12 @@ set(PROJECT_SOURCES
         fightinterface.h
         fightinterface.cpp
         fightinterface.ui
+        cardbank_preview.h
+        cardbank_preview.cpp
+        cardbank_preview.ui
+        cardsetting.h
+        cardsetting.ui
+        cardsetting.cpp
         rsc.qrc
 )
 

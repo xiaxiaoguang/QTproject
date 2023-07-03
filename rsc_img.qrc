@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>youtube.png</file>
+    </qresource>
+    <qresource prefix="/button"/>
+    <qresource prefix="/background">
+        <file>background.jpg</file>
+    </qresource>
+</RCC>
