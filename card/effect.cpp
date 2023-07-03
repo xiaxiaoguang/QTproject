@@ -1,7 +1,13 @@
 #include "effect.h"
 
-class Effect{
-    string text;
-    int speed;
-    virtual void func()=0;
-};
+#include<iostream>
+using std::string;
+
+void Effect::func(){};
+bool Effect::check_conditions(){};
+void Effect::cost(){};
+
+Effect::Effect(){
+    speed=0;
+    text={};
+}
