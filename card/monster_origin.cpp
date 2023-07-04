@@ -4,6 +4,10 @@
 //1  2   3  4   5  6  7
 
 // machine 机械族
+// cyberse 电子界族
+// warrior 战士族
+// seaserpent 海龙
+// dragon   龙
 
 // 链接怪兽从右上到正上方依次为1，2，3，4，5，6，7，8
 // \ | /  7 8 1
@@ -118,3 +122,53 @@ public:
         Keyword += "SkyStriker";
     }
 };
+
+class I_P_Masquerena : public LinkMonster{
+public: 
+    I_P_Masquerena():LinkMonster(800,2,"cyberse",2,Pressure(3,5)){
+    }
+};
+
+class Underworld_Goddess_of_the_Closed_World : public LinkMonster{
+public:
+    Underworld_Goddess_of_the_Closed_World():LinkMonster(3000,1,"Fiend",5,Pressure(8,1,2,3,4)){
+    }
+};
+
+class Isolde_Two_Tales_of_the_Noble_Knights : public LinkMonster{
+public:
+    Isolde_Two_Tales_of_the_Noble_Knights():LinkMonster(1600,1,"warrior",2,Pressure(3,5)){
+    }
+};
+
+class Decode_Talker : public LinkMonster{
+public:
+    Decode_Talker():LinkMonster(2300,2,"cyberse",3,Pressure(3,5,8)){
+    }
+};
+
+class Topologic_Trisbaena : public LinkMonster{
+public:
+    Topologic_Trisbaena():LinkMonster(2500,2,"cyberse",3,Pressure(3,5,8)){
+        Keyword += "Topologic";
+    }
+};
+
+class Borrelcode_Dragon : public LinkMonster{
+public:
+    Borrelcode_Dragon():LinkMonster(2500,2,"dragon",3,Pressure(3,5,8)){
+    }
+};
+
+class Worldsea_Dragon_Zealantis : public LinkMonster{
+public:
+    Worldsea_Dragon_Zealantis():LinkMonster(2500,5,"seaserpent",4,Pressure(2,4,6,8)){
+    }
+};
+
+class Borrelsword_Dragon : public LinkMonster{
+public:
+    Borrelsword_Dragon():LinkMonster(3000,2,"dragon",4,Pressure(4,5,6,8)){
+    }
+};
+

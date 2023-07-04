@@ -11,6 +11,7 @@ class TrapCard : public Card{
     Effect a;
 public:
     const char kd = 'T';
+    TrapCard(int tp);
 };
 
 #endif
