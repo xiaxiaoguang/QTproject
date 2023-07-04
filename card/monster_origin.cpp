@@ -1,6 +1,7 @@
 #include "monster.h"
 
 //光、暗、地、风、水、炎、神 7种属性
+//1  2   3  4   5  6  7
 
 // machine 机械族
 
@@ -46,13 +47,74 @@ public:
     }
 };
 
-class Sky_Striker_Ace_Zeke : public LinkMonster{
+
+class Sky_Striker_Ace_Raye : public MonsterCard{
 public:
-    Sky_Striker_Ace_Zeke():LinkMonster(1500,2,"machine",2,Pressure(3,7)){
+    Sky_Striker_Ace_Raye():MonsterCard(1500,1500,4,2,"warrior"){
         Keyword+="SkyStriker";
     }
 };
 
-int main(){
+class Sky_Striker_Ace_Roze : public MonsterCard{
+public:
+    Sky_Striker_Ace_Roze():MonsterCard(1500,1500,4,1,"warrior"){
+        Keyword+="SkyStriker";
+    }
+};
 
-}
+class Therion_King_Regulus : public MonsterCard{
+public:
+    Therion_King_Regulus():MonsterCard(2800,1600,8,3,"machine"){
+        Keyword+="SkyStriker";
+    }
+};
+
+class Therion_Bull_Ain : public MonsterCard{
+public:
+    Therion_Bull_Ain():MonsterCard(2100,1600,7,6,"warrior"){
+        Keyword+="SkyStriker";
+    }
+};
+
+
+class Sky_Striker_Ace_Zeke : public LinkMonster{
+public:
+    Sky_Striker_Ace_Zeke():LinkMonster(1500,2,"machine",2,Pressure(4,8)){
+        Keyword+="SkyStriker";
+    }
+};
+
+class  Sky_Striker_Ace_Azalea : public LinkMonster{
+public:
+    Sky_Striker_Ace_Azalea():LinkMonster(1500,2,"machine",2,Pressure(3,7)){
+        Keyword += "SkyStriker";
+    }
+};
+
+class Sky_Striker_Ace_Hayate : public LinkMonster{
+public:
+    Sky_Striker_Ace_Hayate():LinkMonster(1500,4,"machine",1,Pressure(5)){
+        Keyword += "SkyStriker";
+    }
+};
+
+class Sky_Striker_Ace_Kagari : public LinkMonster{
+public:
+    Sky_Striker_Ace_Kagari():LinkMonster(1500,6,"machine",1,Pressure(7)){
+        Keyword+= "SkyStriker";
+    }
+};
+
+class Sky_Striker_Ace_Kaina : public LinkMonster{
+public:
+    Sky_Striker_Ace_Kaina():LinkMonster(1500,3,"machine",1,Pressure(3)){
+        Keyword += "SkyStriker";
+    }
+};
+
+class Sky_Striker_Ace_Shizuku : public LinkMonster{
+public:
+    Sky_Striker_Ace_Shizuku():LinkMonster(1500,5,"machine",1,Pressure(1)){
+        Keyword += "SkyStriker";
+    }
+};

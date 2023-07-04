@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(QTC_YGO VERSION 0.1 LANGUAGES CXX)
+project(QTCYGO0 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -17,39 +17,37 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        secondwindow.cpp
-        secondwindow.h
-        dialog.ui
-        dialog.h
-        dialog.cpp
+        fightpre.cpp
+        fightpre.h
+        fightpre.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(QTC_YGO
+    qt_add_executable(QTCYGO0
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
 # Define target properties for Android with Qt 6 as:
-#    set_property(TARGET QTC_YGO APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#    set_property(TARGET QTCYGO0 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(QTC_YGO SHARED
+        add_library(QTCYGO0 SHARED
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(QTC_YGO
+        add_executable(QTCYGO0
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
-target_link_libraries(QTC_YGO PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(QTCYGO0 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
-set_target_properties(QTC_YGO PROPERTIES
+set_target_properties(QTCYGO0 PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -57,12 +55,12 @@ set_target_properties(QTC_YGO PROPERTIES
     WIN32_EXECUTABLE TRUE
 )
 
-install(TARGETS QTC_YGO
+install(TARGETS QTCYGO0
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(QTC_YGO)
+    qt_finalize_executable(QTCYGO0)
 endif()
