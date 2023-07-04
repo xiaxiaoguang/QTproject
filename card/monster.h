@@ -17,6 +17,9 @@ public:
     string Race;//种族
     Effect a;//效果
     MonsterCard(int atk,int def,int stars,int attributes,const char* race);
+    int race();
+    int attributes();
+    int stars();
 };
 
 class LinkMonster : public MonsterCard{
@@ -25,6 +28,8 @@ public :
     int Links;
     SpecialSummon a;
     LinkMonster(int atk,int attributes,const char *race,int lknumbers,int lks);
+    int race();
+    int attributes();
 };
 
 #endif

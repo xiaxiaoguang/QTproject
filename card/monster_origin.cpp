@@ -3,11 +3,11 @@
 //光、暗、地、风、水、炎、神 7种属性
 //1  2   3  4   5  6  7
 
-// machine 机械族
-// cyberse 电子界族
-// warrior 战士族
-// seaserpent 海龙
-// dragon   龙
+// machine 机械族   1 
+// warrior 战士族   2
+// cyberse 电子界族  3
+// seaserpent 海龙   4
+// dragon      龙    5
 
 // 链接怪兽从右上到正上方依次为1，2，3，4，5，6，7，8
 // \ | /  7 8 1
@@ -17,7 +17,6 @@
 int Pressure(){
     return 0;
 }
-
 template<typename T, typename... Args>
 int Pressure(T first,Args... args) {
     return (1<<first)+Pressure(args...);
@@ -172,3 +171,19 @@ public:
     }
 };
 
+/*
+g++ -c cardclass.cpp
+g++ -c effect.cpp 
+g++ -c monster.cpp
+g++ -c monster_origin.cpp -std=c++11
+g++ -c specialsummon.cpp
+
+g++ cardclass.o effect.o monster.o monster_origin.o specialsummon.o -o testout
+
+*/
+
+int main(){
+    Borrelsword_Dragon a;
+    printf("%d %d %d\n",a.race(),a.stars(),a.attributes());
+    return 0;
+}

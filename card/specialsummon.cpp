@@ -1,11 +1,11 @@
 #include "specialsummon.h"
 
-bool SpecialSummon::check_conditions(){};
+bool SpecialSummon::check_conditions(){return false;}
 
-void SpecialSummon::cost(){};
+void SpecialSummon::cost(){}
 
-void SpecialSummon::summon(){};
+void SpecialSummon::summon(){}
 
 SpecialSummon::SpecialSummon(){
-    text = {};
+    text.clear();
 }

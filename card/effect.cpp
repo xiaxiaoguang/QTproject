@@ -1,13 +1,10 @@
 #include "effect.h"
 
-#include<iostream>
-using std::string;
-
-void Effect::func(){};
-bool Effect::check_conditions(){};
-void Effect::cost(){};
+bool Effect::check_conditions(){return false;}
+void Effect::func(){}
+void Effect::cost(){}
 
 Effect::Effect(){
     speed=0;
-    text={};
+    text.clear();
 }
