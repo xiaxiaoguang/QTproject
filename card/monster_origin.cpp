@@ -179,11 +179,16 @@ g++ -c monster_origin.cpp -std=c++11
 g++ -c specialsummon.cpp
 
 g++ cardclass.o effect.o monster.o monster_origin.o specialsummon.o -o testout
-
 */
 
+using std::cout;
+using std::endl;
+
 int main(){
-    Borrelsword_Dragon a;
-    printf("%d %d %d\n",a.race(),a.stars(),a.attributes());
+    Topologic_Trisbaena a;
+    
+    Card *tmp=&a;
+    printf("%d %d %d %d %d\n",tmp->race(),tmp->stars(),tmp->attributes(),tmp->getatk(),tmp->getdef());
+    cout<<tmp->keyword()<<endl;
     return 0;
 }

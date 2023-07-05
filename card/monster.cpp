@@ -30,6 +30,18 @@ int MonsterCard::stars(){
     return Stars;
 }
 
+string MonsterCard::keyword(){
+    return Keyword;
+}
+
+int MonsterCard::getatk(){
+    return ATK;
+}
+
+int MonsterCard::getdef(){
+    return DEF;
+}
+
 LinkMonster::LinkMonster(int atk,int attributes,const char *race,int lknumbers,int lks):MonsterCard(atk,-1,-1,attributes,race)
 {
     Linknumber = lknumbers;
@@ -43,4 +55,16 @@ int LinkMonster::race(){
 
 int LinkMonster::attributes(){
     return Attributes;
+}
+
+string LinkMonster::keyword(){
+    return Keyword;
+}
+
+int LinkMonster::getlink(){
+    return Links;
+}
+
+int LinkMonster::getatk(){
+    return ATK;
 }

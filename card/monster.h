@@ -20,6 +20,9 @@ public:
     int race();
     int attributes();
     int stars();
+    string keyword();
+    int getatk();
+    int getdef();
 };
 
 class LinkMonster : public MonsterCard{
@@ -30,6 +33,9 @@ public :
     LinkMonster(int atk,int attributes,const char *race,int lknumbers,int lks);
     int race();
     int attributes();
+    string keyword();
+    int getlink();
+    int getatk();
 };
 
 #endif

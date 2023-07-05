@@ -15,3 +15,19 @@ int Card::attributes(){
 int Card::race(){
     return -1;
 }
+
+string Card::keyword(){
+    return "";
+}
+
+int Card::getlink(){
+    return 0;
+}
+
+int Card::getatk(){
+    return -1;
+}
+
+int Card::getdef(){
+    return -1;
+}
