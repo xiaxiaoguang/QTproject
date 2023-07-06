@@ -51,7 +51,7 @@
        <item>
         <widget class="QLabel" name="label_2">
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;created by QuanTum Creation&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;chz,ymy,xj&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;contact us:&lt;/span&gt;&lt;a href=&quot;https://github.com/xiaxiaoguang/QTproject&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;ClickedMe!&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;Work of QuanTum Creation&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;creators: chz,ymy,xj&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#e5ea61;&quot;&gt;contact us: &lt;/span&gt;&lt;a href=&quot;https://github.com/xiaxiaoguang/QTproject&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#e53f25;&quot;&gt;CopyThisLinks!&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -135,7 +135,7 @@
      <x>0</x>
      <y>0</y>
      <width>634</width>
-     <height>17</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

@@ -1,0 +1,10 @@
+Number 8
+Cost 1
+Name 星球改造
+Type 通常魔法
+Description
+日文名   テラ·フォーミング
+其它译名或简称   场传
+英文名   Terraforming
+卡片密码   73628505
+从自己卡组把1张场地魔法卡加入手卡.

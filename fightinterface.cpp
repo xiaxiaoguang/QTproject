@@ -29,3 +29,9 @@ void FightInterface::on_backToMainButton_clicked()
     mw->show();
 }
 
+
+void FightInterface::on_pushButton_57_clicked()
+{
+
+}
+

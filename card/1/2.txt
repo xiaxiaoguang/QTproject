@@ -1,0 +1,10 @@
+Number 2
+Cost 1
+Name 心变
+Type 通常魔法
+Description
+日文名   心変わり
+其它译名  变心
+英文名   Change of Heart	
+卡片密码   04031928
+选择对方的场上的1只怪兽。直到发动回合的结束阶段得到选择的卡的控制权。

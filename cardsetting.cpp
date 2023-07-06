@@ -21,3 +21,10 @@ cardbank_configuration::~cardbank_configuration()
 {
     delete ui;
 }
+
+void cardbank_configuration::on_pushButton_2_clicked()
+{
+    close();
+    mw->show();
+}
+

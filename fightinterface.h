@@ -20,6 +20,8 @@ public:
 private slots:
     void on_backToMainButton_clicked();
 
+    void on_pushButton_57_clicked();
+
 private:
     Ui::FightInterface *ui;
     MainWindow *mw;

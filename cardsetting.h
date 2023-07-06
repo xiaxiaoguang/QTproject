@@ -17,6 +17,9 @@ public:
     cardbank_configuration(MainWindow *main);
     ~cardbank_configuration();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::cardbank_configuration *ui;
     MainWindow *mw;
