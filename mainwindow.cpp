@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "fightpre.h"
+#include "cardsetting.h"
 #include<QPushButton>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -37,7 +38,9 @@ void MainWindow::on_MBpve_clicked()//人机对战按钮点击执行
 
 void MainWindow::on_MBcardsetting_clicked()//卡组配置界面按钮点击执行
 {
-
+    cardbank_configuration *a = new cardbank_configuration(this);
+    hide();
+    a->show();
 }
 
 

@@ -8,6 +8,15 @@ cardbank_configuration::cardbank_configuration(QWidget *parent) :
     ui->setupUi(this);
 }
 
+cardbank_configuration::cardbank_configuration(MainWindow *mainw) :
+    QDialog(),
+    ui(new Ui::cardbank_configuration)
+{
+    ui->setupUi(this);
+    mw = mainw;
+}
+
+
 cardbank_configuration::~cardbank_configuration()
 {
     delete ui;

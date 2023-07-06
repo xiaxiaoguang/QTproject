@@ -77,18 +77,17 @@ void fightpre::on_pushButton_4_clicked()
     QMessageBox::about(this,"Hint","Waiting for updating");
 }
 
-
-void fightpre::backToMain()
-{
-    close();
-    mw->show();
-}
-
-
 void fightpre::on_startFightButton_clicked()
 {
     FightInterface * a = new FightInterface(mw);
     close();
     a->show();
+}
+
+
+void fightpre::on_backToMain_clicked()
+{
+    close();
+    mw->show();
 }
 
