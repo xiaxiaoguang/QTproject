@@ -29,6 +29,20 @@ set(PROJECT_SOURCES
         cardsetting.h
         cardsetting.ui
         cardsetting.cpp
+        cardclass.cpp
+        cardclass.h
+        monster.cpp
+        monster.h
+        magic.cpp
+        magic.h
+        magic_origin.cpp
+        effect.cpp
+        effect.h
+        specialsummon.cpp
+        specialsummon.h
+        YGO_simu.cpp
+        trap.cpp
+        trap.h
         rsc.qrc
 )
 

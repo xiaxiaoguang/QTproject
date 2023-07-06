@@ -30,8 +30,6 @@ private slots:
 private slots:
     void on_MBpvp_clicked();
 
-private slots:
-    void on_pushButton_5_clicked();
 
 private:
     Ui::MainWindow *ui;

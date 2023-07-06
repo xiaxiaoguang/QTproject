@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1343</width>
-    <height>816</height>
+    <width>1007</width>
+    <height>667</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,13 +19,14 @@
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QFrame" name="frame">
-     <property name="enabled">
-      <bool>true</bool>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>5</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
      <property name="styleSheet">
-      <string notr="true">#frame{
-border-image: url(:/fightInterface/background/BattleField.jpeg);}
-</string>
+      <string notr="true"/>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -33,1266 +34,1296 @@ border-image: url(:/fightInterface/background/BattleField.jpeg);}
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLabel" name="label">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>430</x>
-        <y>10</y>
-        <width>381</width>
-        <height>31</height>
+        <x>0</x>
+        <y>0</y>
+        <width>961</width>
+        <height>641</height>
        </rect>
       </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(170, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#0000ff;&quot;&gt;Blood of A&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>900</x>
-        <y>10</y>
-        <width>371</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(170, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#0000ff;&quot;&gt;Blood of B&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>590</x>
-        <y>290</y>
-        <width>501</width>
-        <height>73</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,2">
        <item>
-        <widget class="QPushButton" name="pushButton_10">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A的墓地</string>
-         </property>
-        </widget>
+        <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,1">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="4,1">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 85, 255);</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;卡牌展示&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;（此处插入图片）&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QPushButton" name="surrenderButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>投降</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="backToMainButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Back to main</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 170, 0);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;此处是信息&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_11">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_9">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_8">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_19">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A4</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_20">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A5</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_7">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A的全场效果卡</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>590</x>
-        <y>220</y>
-        <width>501</width>
-        <height>73</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QPushButton" name="pushButton_21">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A的卡组</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_22">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A魔法1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_23">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A魔法2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_24">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A魔法3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_25">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A魔法4</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_26">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A魔法5</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_27">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>A的额外卡组</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_3">
-      <property name="geometry">
-       <rect>
-        <x>610</x>
-        <y>550</y>
-        <width>501</width>
-        <height>73</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
-       <item>
-        <widget class="QPushButton" name="pushButton_48">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B的额外卡组</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_43">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B魔法1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_44">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B魔法2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_45">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B魔法3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_46">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B魔法4</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_47">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B魔法5</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_42">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B的手卡</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_4">
-      <property name="geometry">
-       <rect>
-        <x>610</x>
-        <y>450</y>
-        <width>501</width>
-        <height>73</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_6">
-       <item>
-        <widget class="QPushButton" name="pushButton_41">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B的全场效果卡</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_36">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_37">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_38">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_39">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B4</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_40">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B5</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_35">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>B的墓地</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QPushButton" name="backToMainButton">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>70</y>
-        <width>91</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Back to main</string>
-      </property>
-     </widget>
-     <widget class="QScrollArea" name="scrollArea">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>361</width>
-        <height>761</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-right-color: rgb(255, 0, 0);</string>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>359</width>
-         <height>759</height>
-        </rect>
-       </property>
-       <widget class="QLabel" name="label_3">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>10</y>
-          <width>201</width>
-          <height>261</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(170, 85, 255);</string>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;卡牌展示&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;（此处插入图片）&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_4">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>300</y>
-          <width>301</width>
-          <height>391</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 170, 0);</string>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;此处是信息&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-      </widget>
-     </widget>
-     <widget class="QPushButton" name="surrenderButton">
-      <property name="geometry">
-       <rect>
-        <x>270</x>
-        <y>10</y>
-        <width>121</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>投降</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>620</x>
-        <y>380</y>
-        <width>61</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>BP</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_49">
-      <property name="geometry">
-       <rect>
-        <x>740</x>
-        <y>370</y>
-        <width>51</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>51</width>
-        <height>71</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>51</width>
-        <height>71</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 170, 0);</string>
-      </property>
-      <property name="text">
-       <string>额外怪兽1</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_50">
-      <property name="geometry">
-       <rect>
-        <x>930</x>
-        <y>370</y>
-        <width>51</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>51</width>
-        <height>71</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>51</width>
-        <height>71</height>
-       </size>
-      </property>
-      <property name="whatsThis">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 170, 0);</string>
-      </property>
-      <property name="text">
-       <string>额外怪兽2</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_5">
-      <property name="geometry">
-       <rect>
-        <x>640</x>
-        <y>640</y>
-        <width>421</width>
-        <height>91</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QPushButton" name="pushButton_53">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_54">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_52">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_55">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡4</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_56">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡5</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_51">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡6</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_6">
-      <property name="geometry">
-       <rect>
-        <x>620</x>
-        <y>110</y>
-        <width>421</width>
-        <height>91</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QPushButton" name="pushButton_57">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_58">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_59">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_60">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡4</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_61">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡5</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_62">
-         <property name="minimumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>51</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="whatsThis">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 170, 0);</string>
-         </property>
-         <property name="text">
-          <string>手卡6</string>
-         </property>
-        </widget>
+        <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,1">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <property name="spacing">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#0000ff;&quot;&gt;Blood of A&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#0000ff;&quot;&gt;Blood of B&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QPushButton" name="pushButton_57">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_58">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_59">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_60">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡4</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_61">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡5</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_62">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡6</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="pushButton_21">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A的卡组</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_22">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A魔法1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_23">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A魔法2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_24">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A魔法3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_25">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A魔法4</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_26">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A魔法5</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_27">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A的额外卡组</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QPushButton" name="pushButton_10">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A的墓地</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_11">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_9">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_8">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_19">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A4</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_20">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A5</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>A的全场效果卡</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>10</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>BP</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>90</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_49">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>额外怪兽1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>115</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_50">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>额外怪兽2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>210</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QPushButton" name="pushButton_41">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B的全场效果卡</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_36">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_37">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_38">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_39">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B4</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_40">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B5</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_35">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B的墓地</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QPushButton" name="pushButton_48">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B的额外卡组</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_43">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B魔法1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_44">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B魔法2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_45">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B魔法3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_46">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B魔法4</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_47">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B魔法5</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_42">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>B的手卡</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QPushButton" name="pushButton_53">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_54">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_52">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_55">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡4</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_56">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡5</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_51">
+               <property name="minimumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>51</width>
+                 <height>71</height>
+                </size>
+               </property>
+               <property name="whatsThis">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>手卡6</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
