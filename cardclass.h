@@ -2,6 +2,7 @@
 #define CardClass_H
 
 #include<iostream>
+
 using std::string;
 
 class Card{
@@ -15,6 +16,7 @@ public:
     virtual int getlink();
     virtual int getatk();
     virtual int getdef();
+
 };
 
 #endif

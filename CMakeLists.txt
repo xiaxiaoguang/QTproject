@@ -40,9 +40,12 @@ set(PROJECT_SOURCES
         effect.h
         specialsummon.cpp
         specialsummon.h
-        YGO_simu.cpp
+
+        monster_origin.cpp
         trap.cpp
         trap.h
+        cell.h
+        cell.cpp
         rsc.qrc
 )
 
