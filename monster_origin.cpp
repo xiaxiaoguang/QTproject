@@ -26,6 +26,7 @@ class Surgical_Striker_HAMP : public MonsterCard{
 public:
     Surgical_Striker_HAMP():MonsterCard(2500,2500,8,2,"machine"){
         Keyword+="SkyStriker"; //关键字一律以去掉空格+大写字符的方式实现
+        imagename=":/card/card/0/2.jpg";
     }
 };
 
@@ -33,6 +34,7 @@ class Sage_of_Strength_Akash : public MonsterCard{
 public :
     Sage_of_Strength_Akash():MonsterCard(2400,200,5,6,"machine"){
         Keyword+="SkyStriker";
+        imagename = ":/card/card/0/3.jpg";
     }
 };
 
@@ -40,6 +42,7 @@ class Sage_of_Wisdom_Himmel : public MonsterCard{
 public:
     Sage_of_Wisdom_Himmel():MonsterCard(500,2500,5,3,"machine"){
         Keyword+="SkyStriker";
+        imagename = ":/card/card/0/7.jpg";
     }
 };
 
@@ -47,6 +50,7 @@ class Aileron : public MonsterCard{
 public:
     Aileron():MonsterCard(0,0,1,4,"machine"){
         Keyword+="SkyStriker";
+        imagename =":/card/card/0/8.jpg";
     }
 };
 
@@ -55,6 +59,7 @@ class Sky_Striker_Ace_Raye : public MonsterCard{
 public:
     Sky_Striker_Ace_Raye():MonsterCard(1500,1500,4,2,"warrior"){
         Keyword+="SkyStriker";
+        imagename = ":/card/card/0/5.jpg";
     }
 };
 
@@ -62,20 +67,21 @@ class Sky_Striker_Ace_Roze : public MonsterCard{
 public:
     Sky_Striker_Ace_Roze():MonsterCard(1500,1500,4,1,"warrior"){
         Keyword+="SkyStriker";
+        imagename = ":/card/card/0/6.jpg";
     }
 };
 
 class Therion_King_Regulus : public MonsterCard{
 public:
     Therion_King_Regulus():MonsterCard(2800,1600,8,3,"machine"){
-        Keyword+="SkyStriker";
+        imagename = ":/card/card/0/1.jpg";
     }
 };
 
 class Therion_Bull_Ain : public MonsterCard{
 public:
     Therion_Bull_Ain():MonsterCard(2100,1600,7,6,"warrior"){
-        Keyword+="SkyStriker";
+        imagename = ":/card/card/0/4.jpg";
     }
 };
 
@@ -84,6 +90,7 @@ class Sky_Striker_Ace_Zeke : public LinkMonster{
 public:
     Sky_Striker_Ace_Zeke():LinkMonster(1500,2,"machine",2,Pressure(4,8)){
         Keyword+="SkyStriker";
+        imagename= ":/card/card/2/8.jpg";
     }
 };
 
@@ -91,6 +98,7 @@ class  Sky_Striker_Ace_Azalea : public LinkMonster{
 public:
     Sky_Striker_Ace_Azalea():LinkMonster(1500,2,"machine",2,Pressure(3,7)){
         Keyword += "SkyStriker";
+        imagename= ":/card/card/2/9.jpg";
     }
 };
 
@@ -98,6 +106,7 @@ class Sky_Striker_Ace_Hayate : public LinkMonster{
 public:
     Sky_Striker_Ace_Hayate():LinkMonster(1500,4,"machine",1,Pressure(5)){
         Keyword += "SkyStriker";
+        imagename= ":/card/card/2/14.jpg";
     }
 };
 
@@ -105,6 +114,7 @@ class Sky_Striker_Ace_Kagari : public LinkMonster{
 public:
     Sky_Striker_Ace_Kagari():LinkMonster(1500,6,"machine",1,Pressure(7)){
         Keyword+= "SkyStriker";
+        imagename= ":/card/card/2/12.jpg";
     }
 };
 
@@ -112,6 +122,7 @@ class Sky_Striker_Ace_Kaina : public LinkMonster{
 public:
     Sky_Striker_Ace_Kaina():LinkMonster(1500,3,"machine",1,Pressure(3)){
         Keyword += "SkyStriker";
+        imagename= ":/card/card/2/13.jpg";
     }
 };
 
@@ -119,30 +130,36 @@ class Sky_Striker_Ace_Shizuku : public LinkMonster{
 public:
     Sky_Striker_Ace_Shizuku():LinkMonster(1500,5,"machine",1,Pressure(1)){
         Keyword += "SkyStriker";
+        imagename= ":/card/card/2/11.jpg";
     }
 };
 
 class I_P_Masquerena : public LinkMonster{
 public: 
     I_P_Masquerena():LinkMonster(800,2,"cyberse",2,Pressure(3,5)){
+        imagename= ":/card/card/2/10.jpg";
+
     }
 };
 
 class Underworld_Goddess_of_the_Closed_World : public LinkMonster{
 public:
     Underworld_Goddess_of_the_Closed_World():LinkMonster(3000,1,"Fiend",5,Pressure(8,1,2,3,4)){
+        imagename= ":/card/card/2/1.jpg";
     }
 };
 
 class Isolde_Two_Tales_of_the_Noble_Knights : public LinkMonster{
 public:
     Isolde_Two_Tales_of_the_Noble_Knights():LinkMonster(1600,1,"warrior",2,Pressure(3,5)){
+        imagename= ":/card/card/2/7.jpg";
     }
 };
 
 class Decode_Talker : public LinkMonster{
 public:
     Decode_Talker():LinkMonster(2300,2,"cyberse",3,Pressure(3,5,8)){
+        imagename= ":/card/card/2/6.jpg";
     }
 };
 
@@ -150,24 +167,30 @@ class Topologic_Trisbaena : public LinkMonster{
 public:
     Topologic_Trisbaena():LinkMonster(2500,2,"cyberse",3,Pressure(3,5,8)){
         Keyword += "Topologic";
+        imagename= ":/card/card/2/5.jpg";
+
     }
 };
 
 class Borrelcode_Dragon : public LinkMonster{
 public:
     Borrelcode_Dragon():LinkMonster(2500,2,"dragon",3,Pressure(3,5,8)){
+        imagename= ":/card/card/2/4.jpg";
+
     }
 };
 
 class Worldsea_Dragon_Zealantis : public LinkMonster{
 public:
     Worldsea_Dragon_Zealantis():LinkMonster(2500,5,"seaserpent",4,Pressure(2,4,6,8)){
+        imagename= ":/card/card/2/3.jpg";
     }
 };
 
 class Borrelsword_Dragon : public LinkMonster{
 public:
     Borrelsword_Dragon():LinkMonster(3000,2,"dragon",4,Pressure(4,5,6,8)){
+        imagename= ":/card/card/2/2.jpg";
     }
 };
 
@@ -180,15 +203,3 @@ g++ -c specialsummon.cpp
 
 g++ cardclass.o effect.o monster.o monster_origin.o specialsummon.o -o testout
 */
-
-using std::cout;
-using std::endl;
-
-int main(){
-    Topologic_Trisbaena a;
-    
-    Card *tmp=&a;
-    printf("%d %d %d %d %d\n",tmp->race(),tmp->stars(),tmp->attributes(),tmp->getatk(),tmp->getdef());
-    cout<<tmp->keyword()<<endl;
-    return 0;
-}

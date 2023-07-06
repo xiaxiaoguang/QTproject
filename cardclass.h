@@ -7,6 +7,7 @@ using std::string;
 class Card{
 public:
     char Kind; //   'M' 是怪兽卡，'T' 是陷阱卡 'S'是魔法卡
+    string imagename;
     Card(char a);
     virtual int stars();
     virtual int attributes();

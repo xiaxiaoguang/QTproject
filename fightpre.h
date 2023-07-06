@@ -19,12 +19,13 @@ public:
     ~fightpre();
 
 private slots:
-    void on_pushButton_4_clicked();
     void onPlayer1ButtonClicked();
     void onPlayer2ButtonClicked();
     void onpreviewButtonClicked();
     void on_startFightButton_clicked();
     void on_backToMain_clicked();
+
+    void on_FppreviewDeck1_clicked();
 
 private:
     MainWindow *mw;

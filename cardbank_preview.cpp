@@ -12,3 +12,9 @@ cardbank_preview::~cardbank_preview()
 {
     delete ui;
 }
+
+void cardbank_preview::on_pushButton_clicked()
+{
+    close();
+}
+

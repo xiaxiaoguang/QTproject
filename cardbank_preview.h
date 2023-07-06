@@ -15,6 +15,9 @@ public:
     explicit cardbank_preview(QWidget *parent = nullptr);
     ~cardbank_preview();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::cardbank_preview *ui;
 };

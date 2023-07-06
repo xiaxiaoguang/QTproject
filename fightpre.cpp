@@ -2,7 +2,7 @@
 #include "ui_fightpre.h"
 #include<QMessageBox>
 #include "fightinterface.h"
-
+#include "cardbank_preview.h"
 inline void fightpre::connectButtons()
 {
     for (int i = 1; i <= 5; ++i) {
@@ -72,11 +72,6 @@ void fightpre::onpreviewButtonClicked()
     }
 }
 
-void fightpre::on_pushButton_4_clicked()
-{
-    QMessageBox::about(this,"Hint","Waiting for updating");
-}
-
 void fightpre::on_startFightButton_clicked()
 {
     FightInterface * a = new FightInterface(mw);
@@ -89,5 +84,12 @@ void fightpre::on_backToMain_clicked()
 {
     close();
     mw->show();
+}
+
+
+void fightpre::on_FppreviewDeck1_clicked()
+{
+    cardbank_preview * a = new cardbank_preview();
+    a->show();
 }
 

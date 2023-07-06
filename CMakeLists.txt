@@ -40,6 +40,7 @@ set(PROJECT_SOURCES
         effect.h
         specialsummon.cpp
         specialsummon.h
+        monster_origin.cpp
         YGO_simu.cpp
         trap.cpp
         trap.h

@@ -11,7 +11,7 @@
         <file>BattleField.jpeg</file>
     </qresource>
     <qresource prefix="/card/image"/>
-    <qresource prefix="/">
+    <qresource prefix="/card">
         <file>card/0/1.jpg</file>
         <file>card/0/1.txt</file>
         <file>card/0/2.jpg</file>
@@ -84,5 +84,7 @@
         <file>card/2/8.txt</file>
         <file>card/2/9.jpg</file>
         <file>card/2/9.txt</file>
+        <file>230504闪刀姬.jpg</file>
     </qresource>
+    <qresource prefix="/"/>
 </RCC>

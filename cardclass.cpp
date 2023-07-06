@@ -2,6 +2,7 @@
 
 Card::Card(char s){
     Kind=s;
+    imagename.clear();
 }
 
 int Card::stars(){
