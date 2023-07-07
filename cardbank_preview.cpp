@@ -18,3 +18,7 @@ void cardbank_preview::on_pushButton_clicked()
     close();
 }
 
+
+void cardbank_preview::changebackground(QString a){
+    ui->label->setStyleSheet(a);
+}

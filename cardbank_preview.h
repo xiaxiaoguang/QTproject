@@ -14,6 +14,7 @@ class cardbank_preview : public QDialog
 public:
     explicit cardbank_preview(QWidget *parent = nullptr);
     ~cardbank_preview();
+    void changebackground(QString a);
 
 private slots:
     void on_pushButton_clicked();

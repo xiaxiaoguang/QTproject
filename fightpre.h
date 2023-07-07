@@ -20,12 +20,24 @@ public:
 
 private slots:
     void onPlayer1ButtonClicked();
+
     void onPlayer2ButtonClicked();
+
     void onpreviewButtonClicked();
+
     void on_startFightButton_clicked();
+
     void on_backToMain_clicked();
 
     void on_FppreviewDeck1_clicked();
+
+    void on_FppreviewDeck2_clicked();
+
+    void on_FppreviewDeck3_clicked();
+
+    void on_FppreviewDeck4_clicked();
+
+    void on_FppreviewDeck5_clicked();
 
 private:
     MainWindow *mw;

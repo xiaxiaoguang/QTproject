@@ -1,8 +1,9 @@
 #include "fightpre.h"
 #include "ui_fightpre.h"
-#include<QMessageBox>
 #include "fightinterface.h"
 #include "cardbank_preview.h"
+#include<QMessageBox>
+
 inline void fightpre::connectButtons()
 {
     for (int i = 1; i <= 5; ++i) {
@@ -90,6 +91,38 @@ void fightpre::on_backToMain_clicked()
 void fightpre::on_FppreviewDeck1_clicked()
 {
     cardbank_preview * a = new cardbank_preview();
+    a->changebackground("background-image: url(:/card/230504.jpg)");
+    a->show();
+}
+
+
+void fightpre::on_FppreviewDeck2_clicked()
+{
+    cardbank_preview * a = new cardbank_preview();
+    a->changebackground("background-image: url(:/card/230601.jpg)");
+    a->show();
+}
+
+
+void fightpre::on_FppreviewDeck3_clicked()
+{
+    cardbank_preview * a = new cardbank_preview();
+    a->changebackground("background-image: url(:/card/230427.jpg)");
+    a->show();
+}
+
+void fightpre::on_FppreviewDeck4_clicked()
+{
+    cardbank_preview * a = new cardbank_preview();
+    a->changebackground("background-image: url(:/card/220902.jpg)");
+    a->show();
+}
+
+
+void fightpre::on_FppreviewDeck5_clicked()
+{
+    cardbank_preview * a = new cardbank_preview();
+    a->changebackground("background-image: url(:/card/221217.jpg)");
     a->show();
 }
 

@@ -84,7 +84,11 @@
         <file>card/2/8.txt</file>
         <file>card/2/9.jpg</file>
         <file>card/2/9.txt</file>
-        <file>230504闪刀姬.jpg</file>
+        <file>230504.jpg</file>
+        <file>230601.jpg</file>
+        <file>230427.jpg</file>
+        <file>220902.jpg</file>
+        <file>221217.jpg</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

@@ -22,6 +22,8 @@ private slots:
 
     void on_pushButton_57_clicked();
 
+    void scoreDemonstrate(int a,int b);
+
 private:
     Ui::FightInterface *ui;
     MainWindow *mw;

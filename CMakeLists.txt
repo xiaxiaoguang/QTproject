@@ -10,7 +10,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Multimedia)
+
+#target_link_libraries(mytarget PRIVATE Qt6::Multimedia)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -44,6 +49,9 @@ set(PROJECT_SOURCES
         YGO_simu.cpp
         trap.cpp
         trap.h
+        humanbot.cpp
+        humanbot.ui
+        humanbot.h
         rsc.qrc
 )
 

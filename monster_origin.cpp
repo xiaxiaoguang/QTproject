@@ -17,6 +17,7 @@
 int Pressure(){
     return 0;
 }
+
 template<typename T, typename... Args>
 int Pressure(T first,Args... args) {
     return (1<<first)+Pressure(args...);
