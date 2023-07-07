@@ -6,6 +6,10 @@
 #include <QVector>
 #include "cell.h"
 #include "monster.h"
+#include <vector>
+using namespace  std;
+
+
 
 namespace Ui {
 class FightInterface;
@@ -21,7 +25,7 @@ public:
     ~FightInterface();
     int gameRes; //游戏胜利情况。 0：未结束。 1：A胜利 ， 2：B胜利
     int scoreA , scoreB , cardNumA , cardNumB;
-    QVector <Card *> cardSummon; //所有场上卡的备份，用于析构函数删除
+    vector <Card *> cardSummon; //所有场上卡的备份，用于析构函数删除
     Cell AMonsters[5] , BMonsters[5] , AMagic[5] , BMagic[5];
     Cell AVenueMagic , BVenueMagic; //场地魔法
     Cell ATomb , BTomb ,AHandCards , BHandCards; //墓地和手卡
@@ -29,6 +33,7 @@ public:
     Cell additional_1 , additional_2; //额外怪兽区
     Cell ACards , BCards; //卡组
 
+    int state; int obj;
     //TODO 额外卡组
 
     void initialize();
@@ -44,6 +49,8 @@ public:
     void BP_stage(int obj);
     void M2_state(int obj);
     void EP_stage(int obj);
+    //
+
     void simu(); //主函数体
 private slots:
     void on_backToMainButton_clicked();

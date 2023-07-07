@@ -40,8 +40,7 @@ set(PROJECT_SOURCES
         effect.h
         specialsummon.cpp
         specialsummon.h
-
-        monster_origin.cpp
+        monster_origin.h
         trap.cpp
         trap.h
         cell.h

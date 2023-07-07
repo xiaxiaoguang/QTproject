@@ -1,13 +1,19 @@
 #include "fightinterface.h"
 #include "ui_fightinterface.h"
 #include <iostream>
-#include "fightinterface.h"
+
 #include "cardclass.h"
 #include "cell.h"
 #include "monster.h"
 #include <iostream>
+#include <algorithm>
+#include "monster_origin.h"
+#include <QVector>
+#include <vector>
 
 using namespace std;
+
+void scoreDemonstrate(int scoreA ,int scoreB);
 
 FightInterface::FightInterface(QWidget *parent) :
     QWidget(parent),
@@ -40,10 +46,92 @@ void FightInterface::on_backToMainButton_clicked()
 void FightInterface::initialize()
 {
     scoreA = scoreB = 8000;
-    gameRes = 0;
+    //#显示
+
+    gameRes = 0; ACards.source.clear(); BCards.source.clear();
     printf("initialize. Please input card info.\n");
     //TODO 导入卡牌信息
+/*
+    Card * p = new Surgical_Striker_HAMP[1];
 
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Sage_of_Strength_Akash[3];
+    ACards.source.insert(ACards.source.end(), p , p + 3);
+    BCards.source.insert(ACards.source.end(), p , p + 3);
+    p = new Sage_of_Wisdom_Himmel[2];
+    ACards.source.insert(ACards.source.end(), p , p + 2);
+    BCards.source.insert(ACards.source.end(), p , p + 2);
+    p = new Aileron[2];
+    ACards.source.insert(ACards.source.end(), p , p + 2);
+    BCards.source.insert(ACards.source.end(), p , p + 2);
+    p = new Sky_Striker_Ace_Raye[3];
+    ACards.source.insert(ACards.source.end(), p , p + 3);
+    BCards.source.insert(ACards.source.end(), p , p + 3);
+    p = new Sky_Striker_Ace_Roze[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Therion_King_Regulus[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new  I_P_Masquerena[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new  Underworld_Goddess_of_the_Closed_World[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Therion_Bull_Ain[2];
+    ACards.source.insert(ACards.source.end(), p , p + 2);
+    BCards.source.insert(ACards.source.end(), p , p + 2);
+    p = new Sky_Striker_Ace_Zeke;
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Sky_Striker_Ace_Azalea;
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Sky_Striker_Ace_Hayate;
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Sky_Striker_Ace_Kagari[2];
+    ACards.source.insert(ACards.source.end(), p , p + 2);
+    BCards.source.insert(ACards.source.end(), p , p + 2);
+    p = new Sky_Striker_Ace_Kaina[2];
+    ACards.source.insert(ACards.source.end(), p , p + 2);
+    BCards.source.insert(ACards.source.end(), p , p + 2);
+    p = new Sky_Striker_Ace_Shizuku[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new I_P_Masquerena[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Decode_Talker[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Topologic_Trisbaena[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Borrelcode_Dragon[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Worldsea_Dragon_Zealantis[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    p = new Borrelsword_Dragon[1];
+    ACards.source.insert(ACards.source.end(), p , p + 1);
+    BCards.source.insert(ACards.source.end(), p , p + 1);
+    //牌堆的效果？
+    random_shuffle(ACards.source.begin() , ACards.source.end());
+    random_shuffle(BCards.source.begin() , BCards.source.end());
+    //分发手牌
+    AHandCards.source.insert(AHandCards.source.begin() , ACards.source.begin() , ACards.source.begin() + 5);
+    BHandCards.source.insert(BHandCards.source.begin() , BCards.source.begin() , BCards.source.begin() + 5);
+    AHandCards.source.erase(AHandCards.source.begin() , AHandCards.source.begin() + 5);
+    BHandCards.source.erase(BHandCards.source.begin() , BHandCards.source.begin() + 5);
+    //?手牌的效果
+*/
+    //QVector<int> v = {1, 2, 3};
+    //QVector<int> toInsert = {4, 5, 6};
+    //copy(toInsert.begin(), toInsert.end(), v.begin() + 1);
 }
 void FightInterface::clear(){
     //TODO
@@ -51,11 +139,15 @@ void FightInterface::clear(){
 void FightInterface::send2Tomb(Cell * cell){ //必须确保不是能放多张牌的cell
     if (cell->belonger == 0) {
         ATomb.source.push_back(cell->source[0]);
+        //墓地卡牌变化
     }
     else {
         BTomb.source.push_back(cell->source[0]);
+        //墓地卡牌变化
     }
     cell->source.clear();
+    //该地点卡牌变化
+    //ui_send2Tomb(cell);
 }
 void FightInterface::printScores(){
 

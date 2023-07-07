@@ -4,6 +4,10 @@ Card::Card(char s){
     Kind=s;
 }
 
+Card::Card(){
+    Kind=0;
+}
+
 int Card::stars(){
     return -1;
 }

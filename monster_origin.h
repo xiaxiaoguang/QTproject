@@ -1,20 +1,6 @@
+#ifndef MONSTER_ORIGIN_H
+#define MONSTER_ORIGIN_H
 #include "monster.h"
-#include <vector>
-using namespace std;
-
-//光、暗、地、风、水、炎、神 7种属性
-//1  2   3  4   5  6  7
-
-// machine 机械族   1 
-// warrior 战士族   2
-// cyberse 电子界族  3
-// seaserpent 海龙   4
-// dragon      龙    5
-
-// 链接怪兽从右上到正上方依次为1，2，3，4，5，6，7，8
-// \ | /  7 8 1
-// -   -  6   2
-// / | \  5 4 3
 
 int Pressure(){
     return 0;
@@ -38,14 +24,14 @@ public :
     }
 };
 
-class Sage_of_Wisdom_Himmel : public MonsterCard{ //
+class Sage_of_Wisdom_Himmel : public MonsterCard{
 public:
     Sage_of_Wisdom_Himmel():MonsterCard(500,2500,5,3,"machine"){
         Keyword+="SkyStriker";
     }
 };
 
-class Aileron : public MonsterCard{ //
+class Aileron : public MonsterCard{
 public:
     Aileron():MonsterCard(0,0,1,4,"machine"){
         Keyword+="SkyStriker";
@@ -67,7 +53,7 @@ public:
     }
 };
 
-class Therion_King_Regulus : public MonsterCard{ //?
+class Therion_King_Regulus : public MonsterCard{
 public:
     Therion_King_Regulus():MonsterCard(2800,1600,8,3,"machine"){
         Keyword+="SkyStriker";
@@ -124,19 +110,19 @@ public:
     }
 };
 
-class I_P_Masquerena : public LinkMonster{ //?
-public: 
+class I_P_Masquerena : public LinkMonster{
+public:
     I_P_Masquerena():LinkMonster(800,2,"cyberse",2,Pressure(3,5)){
     }
 };
 
-class Underworld_Goddess_of_the_Closed_World : public LinkMonster{ //?
+class Underworld_Goddess_of_the_Closed_World : public LinkMonster{
 public:
     Underworld_Goddess_of_the_Closed_World():LinkMonster(3000,1,"Fiend",5,Pressure(8,1,2,3,4)){
     }
 };
 
-class Isolde_Two_Tales_of_the_Noble_Knights : public LinkMonster{ 
+class Isolde_Two_Tales_of_the_Noble_Knights : public LinkMonster{
 public:
     Isolde_Two_Tales_of_the_Noble_Knights():LinkMonster(1600,1,"warrior",2,Pressure(3,5)){
     }
@@ -173,12 +159,4 @@ public:
     }
 };
 
-/*
-g++ -c cardclass.cpp
-g++ -c effect.cpp 
-g++ -c monster.cpp
-g++ -c monster_origin.cpp -std=c++11
-g++ -c specialsummon.cpp
-
-g++ cardclass.o effect.o monster.o monster_origin.o specialsummon.o -o testout
-*/
+#endif // MONSTER_ORIGIN_H
