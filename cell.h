@@ -14,7 +14,7 @@ class Cell : public QPushButton
 public:
     vector <Card *> source;
     int x , y; //pos
-    int state; //1：攻击表示 ， 0：守备表示； 2：盖放
+    int state; //1：攻击表示 ， 0：守备表示； 2：盖放 -1:没有卡
     int belonger; //0:A , 1:B
     Cell(int _x = 0, int _y = 0);
 };

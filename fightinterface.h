@@ -29,7 +29,7 @@ public:
     Cell AMonsters[5] , BMonsters[5] , AMagic[5] , BMagic[5];
     Cell AVenueMagic , BVenueMagic; //场地魔法
     Cell ATomb , BTomb ,AHandCards , BHandCards; //墓地和手卡
-    Cell AOut , BOut; //除外区
+    Cell AEx , BEx; //额外卡组
     Cell additional_1 , additional_2; //额外怪兽区
     Cell ACards , BCards; //卡组
 
@@ -41,7 +41,7 @@ public:
     void send2Tomb(Cell *);
     void printScores();
     int checkWins(); // 用于战斗中的判断，看是否某人score <= 0。返回0表示未结束，返回1表示A胜利，返回B表示B胜利（如果胜利就输出相关信息）。
-    void printHandCards(int obj);
+
     void performAttack(Cell * attacker , Cell * defencer);
     //以下几个阶段 obj均表示谁执行操作。 若obj = 0 , A操作； =1 ， B操作；
     void prepare_stage(int obj);
