@@ -1,3 +1,5 @@
+#ifndef Monster_origin_H
+#define Monster_origin_H
 #include "monster.h"
 
 //光、暗、地、风、水、炎、神 7种属性
@@ -204,3 +206,5 @@ g++ -c specialsummon.cpp
 
 g++ cardclass.o effect.o monster.o monster_origin.o specialsummon.o -o testout
 */
+
+#endif

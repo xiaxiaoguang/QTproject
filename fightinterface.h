@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "mainwindow.h"
+#include "cell.h"
 
 namespace Ui {
 class FightInterface;
@@ -17,12 +18,14 @@ public:
     explicit FightInterface(MainWindow *);
     ~FightInterface();
 
+    void scoreDemonstrate(int a,int b);
+
+    void ui_send2Tomb(Cell *qwq);
+
 private slots:
     void on_backToMainButton_clicked();
 
     void on_pushButton_57_clicked();
-
-    void scoreDemonstrate(int a,int b);
 
 private:
     Ui::FightInterface *ui;

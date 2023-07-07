@@ -116,7 +116,7 @@
             <number>4</number>
            </property>
            <item>
-            <widget class="QLabel" name="label">
+            <widget class="QLabel" name="BloodA">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                <horstretch>0</horstretch>
@@ -132,7 +132,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_2">
+            <widget class="QLabel" name="BloodB">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
                <horstretch>0</horstretch>
@@ -487,7 +487,7 @@
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout">
              <item>
-              <widget class="QPushButton" name="pushButton_10">
+              <widget class="QPushButton" name="TombA">
                <property name="minimumSize">
                 <size>
                  <width>51</width>
@@ -962,7 +962,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_35">
+              <widget class="QPushButton" name="TombB">
                <property name="minimumSize">
                 <size>
                  <width>51</width>

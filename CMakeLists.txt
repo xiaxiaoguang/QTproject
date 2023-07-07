@@ -45,13 +45,15 @@ set(PROJECT_SOURCES
         effect.h
         specialsummon.cpp
         specialsummon.h
-        monster_origin.cpp
+        monster_origin.h
         YGO_simu.cpp
         trap.cpp
         trap.h
         humanbot.cpp
         humanbot.ui
         humanbot.h
+        cell.h
+        cell.cpp
         rsc.qrc
 )
 
