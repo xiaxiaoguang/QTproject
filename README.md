@@ -1,17 +1,3 @@
-# QTC_YGO
+# QTproject
 
-I'm too naive to use github.
-
-```zsh
-
-git pull origin main --rebase
-
-git init
-
-git add .
-
-git commit -m "initial commit"
-
-git push origin main
-
-```
+QT 大作业 开源项目

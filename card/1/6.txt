@@ -1,0 +1,9 @@
+Number 6
+Cost 1
+Name 
+Type 通常魔法
+Description
+日文名   増援
+英文名   Reinforcement of the Army
+卡片密码   32807846
+从自己卡组把1只4星以下的战士族怪兽加入手卡。

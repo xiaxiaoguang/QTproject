@@ -1,0 +1,9 @@
+Number 11
+Cost 1
+Name 死者苏生
+Type 通常魔法
+Description
+日文名   死者蘇生
+英文名   Monster Reborn
+卡片密码   83764718
+选择自己的或对方的墓地1只怪兽。选择的怪兽特殊召唤到自己场上。
