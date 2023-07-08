@@ -3,7 +3,6 @@
 
 #include "cardclass.h"
 #include <vector>
-
 using namespace std;
 
 class Cell

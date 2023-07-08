@@ -89,6 +89,12 @@
         <file>230427.jpg</file>
         <file>220902.jpg</file>
         <file>221217.jpg</file>
+        <file>card/background0.jpg</file>
+        <file>card/card.qrc</file>
+        <file>card/cardback1.jpg</file>
+        <file>card/cardback2.png</file>
+        <file>card/edge.jpg</file>
+        <file>card/edge1.png</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

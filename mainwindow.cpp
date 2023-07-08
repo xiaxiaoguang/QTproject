@@ -3,7 +3,7 @@
 #include "fightpre.h"
 #include "cardsetting.h"
 #include "humanbot.h"
-
+#include "replay.h"
 #include<QPushButton>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -50,9 +50,10 @@ void MainWindow::on_MBcardsetting_clicked()//卡组配置界面按钮点击执�
 
 void MainWindow::on_MBreplay_clicked()//回放按钮点击执行
 {
-
+    replay *a = new replay(this);
+    hide();
+    a->show();
 }
-
 
 void MainWindow::on_MBsystemsettings_clicked()//系统设置按钮点击执行
 {

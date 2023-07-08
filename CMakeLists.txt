@@ -54,6 +54,15 @@ set(PROJECT_SOURCES
         humanbot.h
         cell.h
         cell.cpp
+        query.cpp
+        query.h
+        query.ui
+        systemsettings.cpp
+        systemsettings.h
+        systemsettings.ui
+        replay.cpp
+        replay.h
+        replay.ui
         rsc.qrc
 )
 
