@@ -76,6 +76,7 @@ void fightpre::onpreviewButtonClicked()
 void fightpre::on_startFightButton_clicked()
 {
     FightInterface * a = new FightInterface(mw);
+    a->initialize();
     close();
     a->show();
 }
